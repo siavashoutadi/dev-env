@@ -1,0 +1,6 @@
+---
+- name: Setup a development environment
+  hosts: dev_env
+  become: yes
+  roles:
+    - role: geerlingguy.git
