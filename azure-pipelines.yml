@@ -17,12 +17,12 @@ steps:
   - script: ansible-galaxy install -p roles -r requirements.yml
     displayName: "Download ansible roles"
 
-  - script: tar cvzf dev-env-$(Build.SourceVersion).tar.gz *
+  - script: tar cvzf dev-env-$(Build.SourceBranchName).tar.gz *
     displayName: "Package the artifact"
 
   - task: CopyFiles@2
     inputs:
-      Contents: 'dev-env-$(Build.SourceVersion).tar.gz'
+      Contents: 'dev-env-$(Build.SourceBranchName).tar.gz'
       targetFolder: $(Build.ArtifactStagingDirectory)
 
   - task: GithubRelease@0
