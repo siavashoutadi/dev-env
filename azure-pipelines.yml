@@ -12,3 +12,9 @@ pool:
 steps:
 - script: ansible-galaxy install -p roles -r requirements.yml
   displayName: 'Download ansible roles'
+
+- task: GithubRelease@0 
+  displayName: 'Create GitHub Release'      
+  inputs:
+    githubConnection: github
+    repositoryName: siavashoutadi/dev-env          
