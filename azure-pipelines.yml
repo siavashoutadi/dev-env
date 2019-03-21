@@ -4,17 +4,25 @@
 # https://aka.ms/yaml
 
 trigger:
-- master
+  - master
 
 pool:
-  vmImage: 'Ubuntu-16.04'
+  vmImage: "Ubuntu-16.04"
 
 steps:
-- script: ansible-galaxy install -p roles -r requirements.yml
-  displayName: 'Download ansible roles'
+  - script: ansible-galaxy install -p roles -r requirements.yml
+    displayName: "Download ansible roles"
 
-- task: GithubRelease@0 
-  displayName: 'Create GitHub Release'
-  inputs:
-    githubConnection: siavashoutadi
-    repositoryName: siavashoutadi/dev-env
+  - script: tar cvzf dev-env-$(Build.SourceVersion).tar.gz *
+    displayName: "Package the artifact"
+
+  - task: CopyFiles@2
+    inputs:
+      Contents: 'dev-env-$(Build.SourceVersion).tar.gz'
+      targetFolder: $(Build.ArtifactStagingDirectory)
+
+  - task: GithubRelease@0
+    displayName: "Create GitHub Release"
+    inputs:
+      githubConnection: siavashoutadi
+      repositoryName: siavashoutadi/dev-env
