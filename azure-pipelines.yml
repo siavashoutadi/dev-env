@@ -11,5 +11,5 @@ pool:
 
 steps:
 - script: ansible-galaxy install -p roles -r requirements.yml
-  displayName: 'Download roles'
+  displayName: 'Download ansible roles'
 
