@@ -15,6 +15,9 @@
     - role: gantsign.maven
     - role: geerlingguy.docker
     - role: gantsign.minikube
+    - role: gantsign.helm
+      tags:
+        - helm
     - role: gantsign.visual-studio-code
       vars:
         users: "{{ visual_studio_code_users | default([]) }}"
