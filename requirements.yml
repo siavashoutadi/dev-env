@@ -16,3 +16,5 @@
   version: 1.7.0
 - src: gantsign.visual-studio-code
   version: 6.2.1
+- src: gantsign.intellij
+  version: 5.5.5
