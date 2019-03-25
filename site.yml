@@ -15,3 +15,6 @@
     - role: gantsign.visual-studio-code
       vars:
         users: "{{ visual_studio_code_users | default([]) }}"
+    - role: gantsign.intellij
+      vars:
+        users: "{{ intellij_users | default([]) }}"
