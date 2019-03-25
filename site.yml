@@ -9,3 +9,4 @@
     - role: geerlingguy.pip
     - role: gantsign.pyenv
     - role: gantsign.java
+    - role: gantsign.maven
