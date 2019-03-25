@@ -3,4 +3,6 @@
   hosts: dev_env
   become: yes
   roles:
+    - role: geerlingguy.repo-epel
+      when: ansible_os_family == 'RedHat'
     - role: siavashoutadi.git
