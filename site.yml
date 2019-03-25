@@ -5,27 +5,51 @@
   roles:
     - role: geerlingguy.repo-epel
       when: ansible_os_family == 'RedHat'
+      tags:
+        - epel
     - role: siavashoutadi.git
+      tags:
+        - git
     - role: geerlingguy.pip
+      tags:
+        - pip
     - role: gantsign.pyenv
+      tags:
+        - pyenv
     - role: geerlingguy.ruby
       tags:
         - ruby
     - role: gantsign.java
+      tags:
+        - java
     - role: gantsign.maven
+      tags:
+        - maven
     - role: geerlingguy.docker
+      tags:
+        - docker
     - role: gantsign.minikube
+      tags:
+        - minikube
     - role: gantsign.helm
       tags:
         - helm
     - role: gantsign.visual-studio-code
       vars:
         users: "{{ visual_studio_code_users | default([]) }}"
+      tags:
+        - vscode
     - role: gantsign.intellij
       vars:
         users: "{{ intellij_users | default([]) }}"
+      tags:
+        - intellij
     - role: gantsign.golang
+      tags:
+        - golang
     - role: geerlingguy.nodejs
+      tags:
+        - nodejs
     - role: devoperate.virtualbox
       tags:
         - virtualbox
