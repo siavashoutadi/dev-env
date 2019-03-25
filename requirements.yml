@@ -30,3 +30,5 @@
   version: v0.1.1
 - src: geerlingguy.ruby
   version: 2.6.0
+- src: gantsign.helm
+  version: 1.4.0
