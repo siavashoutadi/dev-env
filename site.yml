@@ -11,3 +11,4 @@
     - role: gantsign.java
     - role: gantsign.maven
     - role: geerlingguy.docker
+    - role: gantsign.minikube
