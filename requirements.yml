@@ -14,3 +14,5 @@
   version: 2.5.2
 - src: gantsign.minikube
   version: 1.7.0
+- src: gantsign.visual-studio-code
+  version: 6.2.1
