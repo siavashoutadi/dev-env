@@ -26,3 +26,6 @@
     - role: devoperate.vagrant
       tags:
         - vagrant
+    - role: devoperate.google_chrome
+      tags:
+        - google_chrome
