@@ -10,3 +10,4 @@
     - role: gantsign.pyenv
     - role: gantsign.java
     - role: gantsign.maven
+    - role: geerlingguy.docker
