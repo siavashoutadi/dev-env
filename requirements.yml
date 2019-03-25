@@ -24,3 +24,5 @@
   version: 5.0.0
 - src: devoperate.virtualbox
   version: v0.1.1
+- src: devoperate.vagrant
+  version: v0.1.0
