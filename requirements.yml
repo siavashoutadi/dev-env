@@ -28,3 +28,5 @@
   version: v0.1.0
 - src: devoperate.google_chrome
   version: v0.1.1
+- src: geerlingguy.ruby
+  version: 2.6.0

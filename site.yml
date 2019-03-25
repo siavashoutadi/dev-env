@@ -8,6 +8,9 @@
     - role: siavashoutadi.git
     - role: geerlingguy.pip
     - role: gantsign.pyenv
+    - role: geerlingguy.ruby
+      tags:
+        - ruby
     - role: gantsign.java
     - role: gantsign.maven
     - role: geerlingguy.docker
