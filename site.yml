@@ -6,3 +6,5 @@
     - role: geerlingguy.repo-epel
       when: ansible_os_family == 'RedHat'
     - role: siavashoutadi.git
+    - role: geerlingguy.pip
+    - role: gantsign.pyenv
