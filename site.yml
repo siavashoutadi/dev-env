@@ -18,3 +18,4 @@
     - role: gantsign.intellij
       vars:
         users: "{{ intellij_users | default([]) }}"
+    - role: gantsign.golang
