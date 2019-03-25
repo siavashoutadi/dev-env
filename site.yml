@@ -20,3 +20,6 @@
         users: "{{ intellij_users | default([]) }}"
     - role: gantsign.golang
     - role: geerlingguy.nodejs
+    - role: devoperate.virtualbox
+      tags:
+        - virtualbox
