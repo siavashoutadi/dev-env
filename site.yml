@@ -8,3 +8,4 @@
     - role: siavashoutadi.git
     - role: geerlingguy.pip
     - role: gantsign.pyenv
+    - role: gantsign.java
