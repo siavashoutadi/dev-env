@@ -1,5 +1,7 @@
 - src: siavashoutadi.git
   version: 1.0.0
+- src: nephelaiio.devtools
+  version: 2.0.0
 - src: geerlingguy.repo-epel
   version: 1.2.3
 - src: geerlingguy.pip

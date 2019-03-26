@@ -7,6 +7,9 @@
       when: ansible_distribution == 'CentOS' or ansible_distribution == 'Red Hat Enterprise Linux'
       tags:
         - epel
+    - role: nephelaiio.devtools
+      tags:
+        - build_tools
     - role: siavashoutadi.git
       tags:
         - git
