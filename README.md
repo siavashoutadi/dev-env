@@ -1,6 +1,13 @@
 # Setup a development environment
 
-Modify the inventory file to include the hostname of the machine you want to run this playbook towards and then run the following command:
+Download the delivery artifact from release tab and untar it. For example:
+
+```shell
+wget https://github.com/siavashoutadi/dev-env/releases/download/1.0.0/dev-env-1.0.0.tar.gz
+tar -xvzf dev-env-1.0.0.tar.gz
+```
+
+Modify the inventory file to include the hostname of the machine you want to run this playbook towards and create the extra_vars.yaml to customize the playbook and finally run the playbook:
 
 ```shell
 ansible-playbook site.yml -K --extra-vars="@extra_vars.yaml"
@@ -11,7 +18,7 @@ If you want to install it on your local machine then you can simply use the inve
 ansible-playbook site.yml --connection local -K --extra-vars="@extra_vars.yaml"
 ```
 
-**Note**: extra_vars.yaml is optional. It is used to modify the value of the default playbook varibles. For example:
+**Note**: extra_vars.yaml is optional. It is used to customize the playbook and can be omitted. Below there is an example for extra_vars.yaml that shows how the playbook can be customized:
 
 ```yaml
 git_user: user1
