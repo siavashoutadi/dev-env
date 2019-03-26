@@ -59,3 +59,13 @@
     - role: devoperate.google_chrome
       tags:
         - google_chrome
+
+- name: Install extra packages
+  hosts: dev_env
+  become: yes
+  tasks:
+    - package:
+        name: "{{ dev_env_packages | default([])}}"
+        state: present
+      tags:
+        - extra_packages
