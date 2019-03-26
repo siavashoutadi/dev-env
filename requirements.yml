@@ -32,3 +32,5 @@
   version: 2.6.0
 - src: gantsign.helm
   version: 1.4.0
+- src: gantsign.ctop
+  version: 1.1.0

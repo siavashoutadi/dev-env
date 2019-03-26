@@ -28,6 +28,9 @@
     - role: geerlingguy.docker
       tags:
         - docker
+    - role: gantsign.ctop
+      tags:
+        - ctop
     - role: gantsign.minikube
       tags:
         - minikube
