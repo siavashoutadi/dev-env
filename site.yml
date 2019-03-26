@@ -53,7 +53,7 @@
     - role: gantsign.golang
       tags:
         - golang
-    - role: geerlingguy.nodejs
+    - role: devoperate.nodejs
       tags:
         - nodejs
     - role: devoperate.virtualbox
