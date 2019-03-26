@@ -20,6 +20,16 @@
       tags:
         - pyenv
     - role: geerlingguy.ruby
+      vars:
+        ruby_packages:
+          - ruby
+          - ruby-devel
+          - "@development-tools"
+      when: ansible_distribution == 'Fedora'
+      tags:
+        - ruby
+    - role: geerlingguy.ruby
+      when: ansible_distribution != 'Fedora'
       tags:
         - ruby
     - role: gantsign.java
