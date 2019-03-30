@@ -36,3 +36,5 @@
   version: 1.4.0
 - src: gantsign.ctop
   version: 1.1.0
+- src: devoperate.kubectl
+  version: v0.1.1
