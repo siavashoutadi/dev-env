@@ -79,6 +79,15 @@
       tags:
         - google_chrome
 
+- name: Add bash completion for kubectl
+  hosts: dev_env
+  become: yes
+  tasks:
+    - shell: kubectl completion bash >/etc/bash_completion.d/kubectl
+      tags:
+        - kubectl
+      changed_when: false
+
 - name: Install extra packages
   hosts: dev_env
   become: yes
