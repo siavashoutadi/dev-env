@@ -47,6 +47,9 @@
     - role: gantsign.minikube
       tags:
         - minikube
+    - role: devoperate.kubectl
+      tags:
+        - kubectl
     - role: gantsign.helm
       tags:
         - helm
