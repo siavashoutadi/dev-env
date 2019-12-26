@@ -61,6 +61,10 @@
       tags:
         - golang
 
+    - role: andrewrothstein.kubectl
+      tags:
+        - kubectl
+
 - name: Add bash completion for kubectl
   hosts: dev_env
   become: yes
