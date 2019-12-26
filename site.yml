@@ -60,7 +60,9 @@
     - role: gantsign.golang
       tags:
         - golang
-
+    - role: mrlesmithjr.nodejs
+      tags:
+        - nodejs
     - role: andrewrothstein.kubectl
       tags:
         - kubectl
