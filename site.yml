@@ -47,9 +47,6 @@
     - role: gantsign.minikube
       tags:
         - minikube
-    - role: devoperate.kubectl
-      tags:
-        - kubectl
     - role: gantsign.helm
       tags:
         - helm
@@ -66,18 +63,6 @@
     - role: gantsign.golang
       tags:
         - golang
-    - role: devoperate.nodejs
-      tags:
-        - nodejs
-    - role: devoperate.virtualbox
-      tags:
-        - virtualbox
-    - role: devoperate.vagrant
-      tags:
-        - vagrant
-    - role: devoperate.google_chrome
-      tags:
-        - google_chrome
 
 - name: Add bash completion for kubectl
   hosts: dev_env

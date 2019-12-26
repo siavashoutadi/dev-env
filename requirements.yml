@@ -22,19 +22,9 @@
   version: 5.6.1
 - src: gantsign.golang
   version: 2.1.4
-- src: devoperate.nodejs
-  version: v0.1.0
-- src: devoperate.virtualbox
-  version: v0.1.1
-- src: devoperate.vagrant
-  version: v0.1.0
-- src: devoperate.google_chrome
-  version: v0.1.1
 - src: geerlingguy.ruby
   version: 2.6.0
 - src: gantsign.helm
   version: 1.4.1
 - src: gantsign.ctop
   version: 1.1.0
-- src: devoperate.kubectl
-  version: v0.1.1
